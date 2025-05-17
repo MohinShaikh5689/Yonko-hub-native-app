@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "Native_App",
-    "slug": "Native_App",
+    "name": "Yonko Hub",
+    "slug": "yonko-hub",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/icon.jpg",
     "scheme": "nativeapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
@@ -13,10 +13,12 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.jpg",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [],
+      "package": "com.mohin.shaikh.yonkohub"
     },
     "web": {
       "bundler": "metro",
@@ -25,18 +27,26 @@
     },
     "plugins": [
       "expo-router",
+      "react-native-video",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/splash.jpg",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      "react-native-video",
+      "expo-video"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "971a3754-6e5a-4085-a7dc-bf3fad53fbd9"
+      }
     }
   }
 }

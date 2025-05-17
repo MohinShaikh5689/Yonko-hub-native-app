@@ -22,6 +22,30 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="+not-found" />
+        <Stack.Screen
+          name="anime-details/[animeId]"
+          options={{
+            headerShown: false,
+            // Or if you want a custom header:
+            // title: "Anime Details",
+          }}
+        />
+        <Stack.Screen
+          name="watch/[animeId]"
+          options={{
+            headerShown: false,
+            // Or if you want a custom header:
+            // title: "Video Player",
+          }}
+        />
+        <Stack.Screen
+          name="genre/[genre]"
+          options={{
+            headerShown: false,
+            // Or if you want a custom header:
+            // title: "Genre",
+          }}
+        />
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>
